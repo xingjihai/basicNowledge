@@ -1,0 +1,20 @@
+/**
+ * @ 
+ * file类的方法:
+ * file(String pathname)//文件路径:eg:file("bin/hello.txt"),
+ *                                  file("../bin/hello.txt")-->..表示bin的上一级文件
+ * file(URI uti)//传递的绝对资源定位服务
+ * file(File parent,String child)//文件类parent指定为当前文件类的父级,child-->当前文件的名称
+ * file(String parent,String child)//用法同上
+ */
+package java本地文件操作;
+
+import java.io.File;
+
+
+public class HelloFile {
+	public static void main(String[] args) {
+		File file=new File("hello.txt");
+	}
+
+}
