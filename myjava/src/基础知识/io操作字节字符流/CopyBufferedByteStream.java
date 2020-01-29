@@ -1,4 +1,4 @@
-package io²Ù×÷×Ö½Ú×Ö·ûÁ÷;
+package åŸºç¡€çŸ¥è¯†.ioæ“ä½œå­—èŠ‚å­—ç¬¦æµ;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -24,7 +24,7 @@ public class CopyBufferedByteStream {
 			fi.close();
 			fob.close();
 			fo.close();
-			System.out.println("success:"+count+"´Î");
+			System.out.println("success:"+count+"æ¬¡");
 			System.out.println(System.currentTimeMillis()-before+"ms");
 		} catch (Exception e) {
 		}

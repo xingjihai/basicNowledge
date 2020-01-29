@@ -1,8 +1,8 @@
-/**×Ö½ÚĞÍµÄÊäÈë(¶Á)Êä³ö(Ğ´)Á÷:ÒÔStream½áÎ²
- * ×Ö½ÚĞÍµÄread,write·½·¨µÄ¶ÔÏó(Ö»ÄÜ?)ÊÇbyte.    ¼´ÔÚread(),write()Ç°Òª½«Êı¾İ×ª»»³Ébyte
- * @ ×Ö½ÚĞÍ¶ÁĞ´,ÏÈ´ò¿ªµÄÏÈ¹Ø±Õ
+package åŸºç¡€çŸ¥è¯†.ioæ“ä½œå­—èŠ‚å­—ç¬¦æµ;
+/**å­—èŠ‚å‹çš„è¾“å…¥(è¯»)è¾“å‡º(å†™)æµ:ä»¥Streamç»“å°¾
+ * å­—èŠ‚å‹çš„read,writeæ–¹æ³•çš„å¯¹è±¡(åªèƒ½?)æ˜¯byte.    å³åœ¨read(),write()å‰è¦å°†æ•°æ®è½¬æ¢æˆbyte
+ * @ å­—èŠ‚å‹è¯»å†™,å…ˆæ‰“å¼€çš„å…ˆå…³é—­
  */
-package io²Ù×÷×Ö½Ú×Ö·ûÁ÷;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -20,12 +20,12 @@ public class CopyByteStream {
 			long before=System.currentTimeMillis();
 			while ((l=fis.read(b))!=-1) {
 				fiso.write(b,0,l);
-				
+
 				count++;
 			}
 			fis.close();
 			fiso.close();
-			System.out.println("success :"+count+"´Î");
+			System.out.println("success :"+count+"æ¬¡");
 			System.out.println(System.currentTimeMillis()-before+"ms");
 		} catch (Exception e) {
 		}

@@ -1,4 +1,4 @@
-package io²Ù×÷×Ö½Ú×Ö·ûÁ÷;
+package åŸºç¡€çŸ¥è¯†.ioæ“ä½œå­—èŠ‚å­—ç¬¦æµ;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,14 +32,14 @@ public class CopyBuffereCharStream {
 			fowb.close();
 			fow.close();
 			fo.close();
-			System.out.println("success:"+count+"´Î");
+			System.out.println("success:"+count+"æ¬¡");
 			System.out.println(System.currentTimeMillis()-before+"ms");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 }

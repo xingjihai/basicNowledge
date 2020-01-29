@@ -1,12 +1,8 @@
-package io²Ù×÷×Ö½Ú×Ö·ûÁ÷;
+package åŸºç¡€çŸ¥è¯†.ioæ“ä½œå­—èŠ‚å­—ç¬¦æµ;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
-import Ñ­»·.BreakContinue;
 
 public class ReadByteStream {
 
@@ -15,28 +11,28 @@ public class ReadByteStream {
 	 */
 	public static void main(String[] args) {
 		try {
-			
-			
+
+
 			FileInputStream stream=new FileInputStream("hello.txt");
 			byte[] br=new byte[20];
-			
-			
+
+
 //			while (stream.read(br)!=-1) {
 //				String string=new String(br);
-//				System.out.println(string);   //½áÎ²»á¶à³ö¼¸¸ö×Ö½Ú
+//				System.out.println(string);   //ç»“å°¾ä¼šå¤šå‡ºå‡ ä¸ªå­—èŠ‚
 //			}
 			int l=0;
 			while((l=stream.read(br))!=-1){
 				System.out.println(new String(br,0,l));
 			}
 			stream.close();
-			
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 }

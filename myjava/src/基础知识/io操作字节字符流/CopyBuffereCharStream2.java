@@ -1,4 +1,4 @@
-package io²Ù×÷×Ö½Ú×Ö·ûÁ÷;
+package åŸºç¡€çŸ¥è¯†.ioæ“ä½œå­—èŠ‚å­—ç¬¦æµ;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -19,12 +19,12 @@ public class CopyBuffereCharStream2 {
 			FileOutputStream fo=new FileOutputStream("hello-new.txt");
 			OutputStreamWriter fow=new OutputStreamWriter(fo);
 //			BufferedWriter fowb=new BufferedWriter(fow);
-			PrintWriter fowb=new PrintWriter(fow);         /**²»ÊÇ»º³åÁ÷,½ÏÂı*/
+			PrintWriter fowb=new PrintWriter(fow);         /**ä¸æ˜¯ç¼“å†²æµ,è¾ƒæ…¢*/
 			int count=0;
 			long before=System.currentTimeMillis();
 			String string=null;
-			while((string=firb.readLine())!=null){       /**readline()ÕûĞĞÊä³ö*/
-//				fowb.write(string);//Ã»ÓĞ»»ĞĞ                   
+			while((string=firb.readLine())!=null){       /**readline()æ•´è¡Œè¾“å‡º*/
+//				fowb.write(string);//æ²¡æœ‰æ¢è¡Œ
 				fowb.println(string);
 				count++;
 			}
@@ -34,7 +34,7 @@ public class CopyBuffereCharStream2 {
 			fowb.close();
 			fow.close();
 			fo.close();
-			System.out.println("success:"+count+"´Î");
+			System.out.println("success:"+count+"æ¬¡");
 			System.out.println(System.currentTimeMillis()-before+"ms");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
